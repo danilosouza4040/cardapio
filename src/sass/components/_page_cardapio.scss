@@ -1,0 +1,118 @@
+.cardapio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: 'Raleway', sans-serif;
+
+    &__item{
+        background-color: #f6f6f6;
+        box-shadow: 0 0 5px 0px #d1d1d1;
+        width: 100%;
+        max-width: 48%;
+        margin-bottom: 1.5rem;
+        border-left: .3rem solid #a9a3a3;
+        display: block;
+        border-radius: .3rem;
+        overflow: hidden;
+
+        @media (min-width:1000px){
+            display: flex;
+        }
+
+        &:hover{
+            border-left: .3rem solid #ffb822;
+            box-shadow: 0 0 10px 0px #b4b4b4;
+        }
+    }
+
+    &__image {
+        width: 100%;
+        // max-width: 25rem;
+        height:14rem;
+        max-height: 18rem;
+        object-fit: cover;
+        object-position: center;
+        display:block;
+        
+        @media (min-width:1000px){
+            height:18rem;
+        }
+
+    }
+
+    &__text{
+        padding: 2rem 1rem 1rem 1rem;
+        text-align: center;
+
+        @media (min-width:1000px){
+            padding: 2rem 3rem;
+            text-align: left;
+           
+        }
+
+        h2{
+            font-size: 1.3rem;
+            height: 3rem;
+            max-height: 3rem;
+            margin-bottom: 0;
+            overflow: hidden;
+            font-family: 'Bebas Neue', cursive;
+            letter-spacing: 0.041rem;
+        }
+
+        p{
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+            color: #747474;
+            height: 12rem;
+            max-height: 12rem;
+            overflow: hidden;
+
+            @media (min-width:1000px){
+                max-height: 5rem;
+            }
+        }
+        
+        &--preco{
+            color: #444 !important;
+            font-size: 1.2rem;
+        }
+    }
+    
+}
+
+.banner-cardapio{
+    margin-bottom: 4rem;
+    position: relative;
+
+    &__img{
+        background-color: #000;
+
+        img{
+            width: 100%;
+            max-height: 50rem;
+            object-fit: cover;
+            object-position: center;
+            opacity: 70%;
+            display: block;
+        }
+    }
+
+    &__text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        h2{
+            color: #fff;
+            font-weight: 300;
+            font-family: 'Bebas Neue', cursive;
+            text-shadow: 3px 2px 4px black;
+        }
+    }
+}
